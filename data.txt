@@ -1,0 +1,1 @@
+NIBM offers a Learning Management System that supports students and lecturers. It includes features such as course enrollment, assignment uploads, and discussion forums.
