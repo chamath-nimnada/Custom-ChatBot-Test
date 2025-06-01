@@ -1,4 +1,4 @@
-# 🧠 DeepSeek Chatbot
+# 🧠 Custom Chatbot using Local Installed Deepseek-r1 model
 
 A simple, fast, and fully local chatbot built with Node.js, Tailwind CSS, and the `deepseek-r1` language model running through [Ollama](https://ollama.com/). This chatbot answers only based on custom knowledge provided by the user.
 
@@ -28,18 +28,6 @@ A simple, fast, and fully local chatbot built with Node.js, Tailwind CSS, and th
 
 ---
 
-## 📁 Folder Structure
-deepseek-chatbot/
-├── public/
-│ └── index.html # Frontend (Chat UI)
-├── data.txt # Your custom knowledge base
-├── documentLoader.js # Loads data from file
-├── ollama.js # Handles communication with Ollama
-├── server.js # Main Express backend
-└── README.md # Project documentation
-
----
-
 ## ⚙️ Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18+ recommended)
@@ -48,3 +36,4 @@ deepseek-chatbot/
 
 ```bash
 ollama pull deepseek-r1:latest
+```
