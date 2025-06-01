@@ -1,9 +1,12 @@
-// documentLoader.js
 const fs = require("fs");
 
 function loadDocument(filePath) {
-  const text = fs.readFileSync(filePath, "utf-8");
-  return text;
+  try {
+    return fs.readFileSync(filePath, "utf8");
+  } catch (err) {
+    console.error("Failed to load document:", err);
+    return "";
+  }
 }
 
 module.exports = { loadDocument };
